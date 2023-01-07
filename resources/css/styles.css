@@ -1,0 +1,108 @@
+* {
+    margin:0;
+    padding: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    /*font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Righteous', cursive;*/
+}
+
+/* navigation styles */
+#nav {
+    margin: 40px 60px 0 60px;
+    display: flex;
+    justify-content: space-between;
+    border:1px solid red;
+}
+#nav ul {
+    list-style-type: none;
+    margin: 8px 0 0 0;
+    padding: 0;
+}
+#nav li {
+    display: inline-block;
+  
+    margin-right:20px;
+}
+/*logo styles PS:temporary*/
+.logo {
+    font-family: 'Righteous', cursive;
+    font-size: 30px;
+}
+
+/*header styles*/
+header {
+    display: flex;
+    align-items: center;
+    border: 1px solid green;
+    margin: 60px 40px 0 40px;
+    font-size: 1.5em;
+    
+}
+
+header #name {
+    margin: 20px 30px 20px 30px;
+    padding-right: 20px;
+    border-right: 5px solid black;
+}
+header #name h1{
+    font-family: 'Righteous', cursive;
+    font-size: 2.5em;
+}
+
+#tagline {
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+/*small introduction styles*/
+.smallIntro {
+   margin:0 40px 0 40px;
+   border: 1px solid blue;
+
+}
+/* my work styles */
+#myWork{
+    margin:20px 40px 20px 40px; 
+}
+#myWork h2{
+    text-align: center;
+}
+#mainWorks {
+    width: 80%;
+    border: 1px solid orange;
+    margin: auto;
+  
+}
+#mainWorks b{
+    font-family:'IBM Plex Mono', monospace ;
+    font-size: 1.3em;
+}
+.work1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    margin:10px 0 10px 0;
+}
+.work1 p, .work2 p, .work3 p{
+    margin: 0 10px 0 10px;
+}
+#mainWorks .work1 img, .work2 img, .work3 img{
+    width: 600px;
+    height: 100%;
+    object-fit: contain;
+
+}
+.work2 {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.work3 {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
