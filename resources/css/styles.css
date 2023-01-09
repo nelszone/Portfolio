@@ -28,16 +28,20 @@ body {
 }
 #nav ul {
     list-style-type: none;
-    margin: 8px 80px 0 0;
+    margin: 8px 80px 0 0 ;
     padding: 0;
 }
 #nav li {
     display: inline-block;
-    margin-right:20px;
+    margin:0 10px 0 10px;
 }
 
 #nav a:hover{
-    border-bottom: 2px solid #f5f6fa;;
+    border-bottom: 2px solid #f5f6fa;
+}
+#nav li .active {
+    border-bottom: 2px solid #f5f6fa;
+
 }
 /*Nav mobile styles */
 @media only screen and (max-width: 768px) {
@@ -119,7 +123,7 @@ header #name h1{
 }
     @keyframes typing {
     from { width: 0 }
-    to { width: 38% }
+    to { width: 30% }
   }
   
   /* The typewriter cursor effect */
@@ -187,7 +191,7 @@ header #name h1{
    
     header #name {
         margin: 20px 30px 20px 30px;
-        padding-right: 20px;
+        padding-right: 0;
         border-right: 0px;
         border-bottom: 3px solid #f5f6fa;
       
@@ -210,8 +214,10 @@ header #name h1{
         text-align: center;
         
     }
+ 
     header #name h1{
         font-size: 1.5em;
+        
     }
     #tagline {
         display: none;
@@ -221,9 +227,6 @@ header #name h1{
         font-size: 0.8em;
     }
     header #name {
-        margin: 20px 30px 20px 30px;
-        padding-right: 20px;
-        border-right: 0px;
         border-bottom: 3px solid #f5f6fa; 
     }
     .smallIntro {
@@ -288,6 +291,107 @@ header #name h1{
 
 }
 
+@media only screen and (max-width: 1300px) {
+    #mainWorks .imgContainer {
+        width: 1600px;
+        height: 250px;
+        margin: 10px;
+    }
+    .myWork h2 {
+        text-align: center;
+    }
+
+}
+@media only screen and (max-width: 768px) {
+    .myWork h2 {
+        text-align: center;
+    }
+    #mainWorks .imgContainer {
+        
+        width: 480px;
+        height: 280px;
+        margin: 10px auto 10px auto;
+        
+    }
+    .work3 {
+        display:block;
+        text-align: justify;
+
+    }
+   
+    .work2 {
+        display:block;
+        text-align: justify;
+        
+    }
+    .work2 .imgContainer {
+        position: relative;
+        bottom:150px;
+    }
+
+    .work2 p {
+        position: relative;
+        top:300px; 
+     
+    }
+   
+    #mainWorks {
+        width: 80%;
+        height: 100%;
+        border-bottom: 1px solid #f5f6fa;
+      
+    }
+}
+@media only screen and (max-width:640px) {
+    #mainWorks .imgContainer {
+        
+        width:380px;
+        height: 260px;
+        margin: 10px auto 10px auto;
+    }
+   
+    .work2 .imgContainer {
+        position: relative;
+        bottom:180px;
+    }
+    .work2 p {
+        position: relative;
+        top:280px; 
+        text-align: justify;
+    }
+}
+@media only screen and (max-width:540px) {
+    
+    #mainWorks .imgContainer {
+        width: 360px;
+        height: 240px;
+    }
+       .work2 .imgContainer {
+        bottom: 200px
+       }
+    .work2 p{
+        top: 260px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    #mainWorks .imgContainer {
+        width: 280px;
+        height: 240px;
+    }
+    #mainWorks b{
+        font-size: 1.2em;
+    }
+    .work2 .imgContainer {
+        bottom: 250px
+       }
+    .work2 p{
+        top: 260px;
+    }
+ 
+}
+
 /*About me styles*/
 #about {
     width: 100%;
@@ -311,7 +415,7 @@ header #name h1{
     margin: 10px auto auto auto;
 }
 #about img{
-    margin-top: 20px;
+    
     width: 100%;
     height: 100%;
 }
@@ -319,6 +423,26 @@ header #name h1{
     margin: 10px 50px 0 50px;
 }
 
+@media only screen and (max-width: 768px) {
+    #about {
+        text-align: justify;
+    }
+    #aboutMeContainer {
+    
+        width: 100%;
+        margin: auto;
+       
+    }
+    #about h2 {
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+   
+}
 /*contact styles*/
 .contact {
    
@@ -337,6 +461,9 @@ header #name h1{
     
 }
 
+.contact p{
+    margin-top: 10px;
+}
 .contact button{
     height: 30px;
     width: 100px;
@@ -350,6 +477,28 @@ header #name h1{
 .contact button:hover {
     cursor: pointer;
     opacity: 0.8;
+}
+
+@media only screen and (max-width: 768px) {
+    #contact p {
+        text-align: justify;
+    }
+    .button {
+        text-align: center;
+    }
+    #contact h2 {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #contact p {
+        text-align: justify;
+    }
+    .button {
+        text-align: center;
+    }
+   
 }
 /*footer styles */
 footer {
